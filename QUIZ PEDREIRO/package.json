@@ -1,0 +1,9 @@
+{
+  "name": "quiz-pedreiro",
+  "version": "1.0.0",
+  "description": "Funil completo Orçaí (Quiz + Página de Oferta)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

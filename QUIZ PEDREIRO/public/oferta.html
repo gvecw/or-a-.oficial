@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçaí | Pare de cobrar no chute</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/oferta.css">
+</head>
+<body>
+
+  <!-- 0. Faixa de Anúncio no Topo -->
+  <div class="faixa-topo">PEDREIRO, CHEGA DE CHUTAR O PREÇO</div>
+
+  <!-- 1. Hero + Carrossel de Opiniões -->
+  <section class="secao hero hro">
+    <div class="col">
+      <h1>Monte o orçamento da obra em 40 segundos só com a sua voz, usando o preço da <mark>SUA região</mark></h1>
+
+      <figure id="hst" class="hst">
+        <img src="/img/cenas/hero-pedreiro.webp" alt="Pedreiro usando o aplicativo na obra">
+        <figcaption class="hst-orc">
+          <div class="hst-topo">
+            <img src="/icons/icon-192.png" alt="Orçaí" style="width:18px;height:18px;border-radius:4px;object-fit:cover;">
+            <span style="font-family:'Barlow',sans-serif;font-weight:800;letter-spacing:.01em;">Orçaí</span>
+          </div>
+          <div class="hst-cli">
+            <span>Orçamento pra Dona Maria</span>
+            <span class="hst-pronto">✓ pronto em 0:40</span>
+          </div>
+          <div class="hst-linha"><span>Levantar parede (45 m²)</span><b>R$ 2.925</b></div>
+          <div class="hst-linha"><span>Reboco (45 m²)</span><b>R$ 2.025</b></div>
+          <div class="hst-mat"><span>Material da parede</span><b>591 blocos · 32 sacos</b></div>
+          <div class="hst-tot"><span>TOTAL</span><b>R$ 4.950</b></div>
+        </figcaption>
+      </figure>
+
+      <a href="#oferta" class="cta">QUERO ACESSAR O ORÇAÍ →</a>
+      <a href="#como-funciona" class="cta hro-cta2">VER COMO FUNCIONA</a>
+
+      <div class="pvr" aria-label="Opiniões de quem usa o app">
+        <div class="pvr-rot">Quem usa, fala:</div>
+        <div id="pvr-trilha" class="pvr-trilha">
+          <article class="pvr-card"><span class="pvr-aspas">“</span><p class="pvr-txt">Sim, até agora 100% de aproveitamento!! Estou indicando para 2 amigos!! Não me arrependo nem um minuto, o arrependimento que tenho é não ter começado a usar antes!!</p><div class="pvr-autor">NIVELLAR construções · Jundiaí/SP</div></article>
+          <article class="pvr-card"><span class="pvr-aspas">“</span><p class="pvr-txt">Mandei e o cliente fechou no mesmo dia uma cobertura</p><div class="pvr-autor">Everaldo · Navegantes/SC</div></article>
+          <article class="pvr-card"><span class="pvr-aspas">“</span><p class="pvr-txt">Sim cliente nem chorou no preço Muito bom.</p><div class="pvr-autor">Alvaro Cezar Damaceno · Londrina/PR</div></article>
+          <article class="pvr-card"><span class="pvr-aspas">“</span><p class="pvr-txt">Mandei o orçamento na frente do cliente, ele analisou, tirei algumas dúvidas com ele e fechamos na hora</p><div class="pvr-autor">Cleiton Batista de Sousa · Niquelândia/GO</div></article>
+          <article class="pvr-card"><span class="pvr-aspas">“</span><p class="pvr-txt">Consegui fechar os orçamentos mais rápido</p><div class="pvr-autor">Ricardo André Domiciano · São Paulo/SP</div></article>
+          <article class="pvr-card"><span class="pvr-aspas">“</span><p class="pvr-txt">Todos os orçamentos feitos pelo app foram aprovados e executados, valor justo e orçamento profissional de boa apresentação👏🏽👏🏽👏🏽</p><div class="pvr-autor">Francismar Carmo · Espigão d’Oeste/RO</div></article>
+          <article class="pvr-card"><span class="pvr-aspas">“</span><p class="pvr-txt">Enviei o orçamento de umas kitinetes e o cliente aceitou sem questionar muito bom mesmo este app tem me ajudado muito</p><div class="pvr-autor">Maciel Lemos · Recife/PE</div></article>
+          <article class="pvr-card"><span class="pvr-aspas">“</span><p class="pvr-txt">Estou gostando muito do app Muito prático e rápido. Faço orçamento com perfeição e com preço certo</p><div class="pvr-autor">Campêlo Construções · São José do Rio Preto/SP</div></article>
+          <article class="pvr-card"><span class="pvr-aspas">“</span><p class="pvr-txt">É uma excelente ferramenta, facilita muito e passa muita segurança na hora de fecher o serviço. Tanto para o cliente, quanto para o profissional.</p><div class="pvr-autor">Marcelo Alexandre · Belford Roxo/RJ</div></article>
+        </div>
+        <div id="pvr-dots" class="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Como Funciona + Mockup de Voz -->
+  <section id="como-funciona" class="secao">
+    <div class="col">
+      <h2>Veja como funciona</h2>
+      <p class="cf-ver">Acompanhe o app gerando o orçamento na hora em que você fala:</p>
+
+      <div id="fal" class="fal">
+        <div class="fal-tela" style="padding:0;overflow:hidden;">
+          <img src="/img/app/5-revisao-total.webp" alt="Revisão final do orçamento no Orçaí" style="width:100%;height:auto;display:block;" />
+        </div>
+      </div>
+
+      <div class="passos">
+        <article class="passo">
+          <h3>1. Escolha o serviço e a medida</h3>
+          <p>Seleciona o trabalho, informa a metragem e o app já calcula os valores.</p>
+          <div class="mini-tela" style="padding:0;overflow:hidden;">
+            <img src="/img/app/2-servicos-medida.webp" alt="Escolha do serviço e medida no Orçaí" style="width:100%;height:auto;display:block;" />
+          </div>
+        </article>
+
+        <article class="passo">
+          <h3>2. O app soma tudo, até o material</h3>
+          <p>Mão de obra, blocos, sacos e perda, sem precisar fazer conta de cabeça.</p>
+          <div class="mini-tela" style="padding:0;overflow:hidden;">
+            <img src="/img/app/4-material.webp" alt="Etapa de material no Orçaí" style="width:100%;height:auto;display:block;" />
+          </div>
+        </article>
+
+        <article class="passo">
+          <h3>3. Você define o valor a pedir</h3>
+          <p>Mínimo, justo e premium da sua cidade.</p>
+          <div class="mini-tela" style="padding:0;overflow:hidden;">
+            <img src="/img/app/3-preco-justo.webp" alt="Preços mínimo, justo e premium no Orçaí" style="width:100%;height:auto;display:block;" />
+          </div>
+        </article>
+
+        <article class="passo">
+          <h3>4. Envia o PDF pelo WhatsApp</h3>
+          <p>Já sai com seu nome e seu telefone.</p>
+          <div class="mini-zap" style="padding:0;overflow:hidden;">
+            <img src="/img/app/6-pdf-orcamento.webp" alt="Geração e envio do PDF no Orçaí" style="width:100%;height:auto;display:block;" />
+          </div>
+        </article>
+      </div>
+
+      <a href="#oferta" class="cta">QUERO COMEÇAR AGORA →</a>
+    </div>
+  </section>
+
+  <!-- 3. Comparativo Antes e Depois no WhatsApp -->
+  <section class="secao ad-secao">
+    <div class="col">
+      <h2>O que separa perder o serviço de fechar a obra</h2>
+
+      <div class="ad-grid">
+        <figure class="ad-card antes" style="margin:0">
+          <div class="ad-tag"><span>ANTES</span><span>9:41</span></div>
+          <div class="ad-zap-h"><b>Dona Maria</b><small>visto por último há 3 dias</small></div>
+          <div class="ad-chat">
+            <div class="ad-b eu">oi dona maria segue o orçamento<time>17:06</time></div>
+            <div class="ad-b eu">parede 25 metro 1625 / reboco 1125 / total 2750<time>17:06</time></div>
+            <div class="ad-b eu">qualquer coisa me chama<time>17:06</time></div>
+            <div class="ad-b cli">Vou ver com meu marido e te aviso<time>09:12</time></div>
+            <div class="ad-b eu">e aí dona maria, vai querer?<time>18:40</time></div>
+          </div>
+          <figcaption class="ad-res">O cliente desapareceu. 😔</figcaption>
+        </figure>
+
+        <figure class="ad-card depois" style="margin:0">
+          <div class="ad-tag"><span>DEPOIS</span><span>9:41</span></div>
+          <div class="ad-zap-h"><b>Dona Maria</b><small>online</small></div>
+          <div class="ad-chat">
+            <div class="ad-b eu">
+              <b>Carlos Souza · Pedreiro</b><br>
+              ORÇAMENTO Nº 0031 · TOTAL R$ 2.750<br>
+              <small>Orcamento-0031.pdf · 1 página · PDF</small>
+              <time>17:30</time>
+            </div>
+            <div class="ad-b eu">Bom dia, Dona Maria! Segue o orçamento detalhado 🙂<time>17:30</time></div>
+            <div class="ad-b cli">Nossa, ficou muito profissional! 😍<time>17:31</time></div>
+            <div class="ad-b cli">Pode começar segunda?<time>17:31</time></div>
+          </div>
+          <figcaption class="ad-res">O cliente aprovou na hora. 🤝</figcaption>
+        </figure>
+      </div>
+
+      <a href="#oferta" class="cta">QUERO ENVIAR DESSE JEITO →</a>
+    </div>
+  </section>
+
+  <!-- 4. Precisão de Preço & Comparativo por Capital -->
+  <section class="secao">
+    <div class="col">
+      <h2>Não basta ser rápido se o valor estiver errado</h2>
+
+      <div class="cmp-duelo">
+        <div class="cmp-card errado">
+          <div class="cmp-head"><h3>Rápido, mas no chute</h3><span>R$ ?</span></div>
+          <p style="margin:0;font-size:14px;color:var(--suave);">Valor tirado da cabeça ou copiado de outro.</p>
+          <ul class="cmp-bul">
+            <li>Usa o mesmo preço pra qualquer região</li>
+            <li>Ignora os imprevistos e a dificuldade do serviço</li>
+            <li>Não mostra se vai pagar sua diária</li>
+          </ul>
+        </div>
+        <div class="cmp-card certo">
+          <div class="cmp-head"><h3>Rápido, com o valor da sua região</h3><span>✓</span></div>
+          <p style="margin:0;font-size:14px;color:var(--suave);">Valor da sua cidade somado ao seu custo e ao trabalho que a obra dá.</p>
+          <ul class="cmp-bul">
+            <li>Você enxerga na hora o mínimo, o justo e o premium</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cmp-chart">
+        <p class="cmp-chart-tit">A mesma parede, em diferentes capitais</p>
+        <div class="cmp-bar-row"><span>SP</span><div class="cmp-track"><div class="cmp-fill" style="width:100%"></div></div><span>R$ 65/m²</span></div>
+        <div class="cmp-bar-row"><span>PR</span><div class="cmp-track"><div class="cmp-fill" style="width:95%"></div></div><span>R$ 62/m²</span></div>
+        <div class="cmp-bar-row"><span>MG</span><div class="cmp-track"><div class="cmp-fill" style="width:80%"></div></div><span>R$ 52/m²</span></div>
+        <div class="cmp-bar-row"><span>BA</span><div class="cmp-track"><div class="cmp-fill" style="width:65%"></div></div><span>R$ 42/m²</span></div>
+        <div class="cmp-bar-row"><span>CE</span><div class="cmp-track"><div class="cmp-fill" style="width:60%"></div></div><span>R$ 39/m²</span></div>
+        <div class="cmp-dif">Variação de até <b>R$ 26/m²</b> · Mesmo serviço. Cada lugar tem seu preço.</div>
+      </div>
+
+      <a href="#oferta" class="cta">QUERO COBRAR CERTO →</a>
+    </div>
+  </section>
+
+  <!-- 5. Grade 2x2: É isso que o app faz -->
+  <section class="secao">
+    <div class="col">
+      <h2>É isso que você ganha com o app</h2>
+      <div id="selos" class="selos">
+        <div class="selo-card ativo"><span class="selo-ico">📍</span>Valor da sua região</div>
+        <div class="selo-card"><span class="selo-ico">🛡️</span>Seu ganho mínimo</div>
+        <div class="selo-card"><span class="selo-ico">📐</span>Ajuste de dificuldade</div>
+        <div class="selo-card"><span class="selo-ico">📄</span>PDF pronto na mão</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Carrossel de 6 Exemplos de PDF -->
+  <section class="secao">
+    <div class="col">
+      <h2>Olha o documento que chega pro cliente</h2>
+      <p class="sub-sec">Com seu nome, seu WhatsApp e cada item bem explicado.</p>
+
+      <div id="pdf-trilha" class="pdf-trilha" role="group" aria-label="Seis exemplos de orçamento em PDF, arraste para o lado">
+        <article class="pdf-card" style="padding:0;overflow:hidden;">
+          <img src="/img/app/6-pdf-orcamento.webp" alt="Orçamento em PDF gerado pelo Orçaí" style="width:100%;height:auto;display:block;" />
+        </article>
+
+        <article class="pdf-card">
+          <span class="pdf-tag">Material do cliente</span>
+          <div class="pdf-pro">Carlos Reformas · Pedreiro · São Paulo/SP</div>
+          <div class="pdf-zap">wa.me/5511988881234</div>
+          <div class="pdf-meta"><b>ORÇAMENTO Nº 0014</b><span>05/03/2026 até 20/03/2026</span></div>
+          <div class="pdf-cli">Cliente: Obra Apto 32</div>
+          <div class="pdf-linha"><span>Azulejo na parede (14 m² × R$ 84)</span><b>R$ 1.176</b></div>
+          <div class="pdf-linha"><span>Piso cerâmico (26 m² × R$ 58)</span><b>R$ 1.508</b></div>
+          <div class="pdf-tot"><span>Total</span><b>R$ 2.684</b></div>
+          <div class="pdf-rod">Inclui: mão de obra · Não inclui: material</div>
+        </article>
+
+        <article class="pdf-card">
+          <span class="pdf-tag">Por diária</span>
+          <div class="pdf-pro">Pedro Obras · Pedreiro · Fortaleza/CE</div>
+          <div class="pdf-zap">wa.me/5585988881234</div>
+          <div class="pdf-meta"><b>ORÇAMENTO Nº 0019</b><span>18/02/2026 até 05/03/2026</span></div>
+          <div class="pdf-cli">Cliente: Seu Antônio</div>
+          <div class="pdf-linha"><span>Diária de pedreiro (5 d × R$ 237)</span><b>R$ 1.185</b></div>
+          <div class="pdf-tot"><span>Total</span><b>R$ 1.185</b></div>
+          <div class="pdf-rod"><span class="brand-pdf"><img src="/icons/icon-192.png" alt="Orçaí">Gerado com <b>Orçaí</b></span></div>
+        </article>
+
+        <article class="pdf-card">
+          <span class="pdf-tag">Obra grande</span>
+          <div class="pdf-pro">Reformas Lima · Pedreiro · Belo Horizonte/MG</div>
+          <div class="pdf-zap">wa.me/5531988881234</div>
+          <div class="pdf-meta"><b>ORÇAMENTO Nº 0023</b><span>02/04/2026 até 17/04/2026</span></div>
+          <div class="pdf-cli">Cliente: Condomínio Bloco B</div>
+          <div class="pdf-linha"><span>Contrapiso (40 m² × R$ 31)</span><b>R$ 1.240</b></div>
+          <div class="pdf-linha"><span>Porcelanato 60x60 (40 m² × R$ 58)</span><b>R$ 2.320</b></div>
+          <div class="pdf-tot"><span>Total</span><b>R$ 3.560</b></div>
+          <div class="pdf-rod">Inclui: mão de obra e ajudante</div>
+        </article>
+
+        <article class="pdf-card">
+          <span class="pdf-tag">Um serviço só</span>
+          <div class="pdf-pro">Antônio Obras · Pedreiro · Salvador/BA</div>
+          <div class="pdf-zap">wa.me/5571988881234</div>
+          <div class="pdf-meta"><b>ORÇAMENTO Nº 0028</b><span>24/03/2026 até 08/04/2026</span></div>
+          <div class="pdf-cli">Cliente: Dona Cleusa</div>
+          <div class="pdf-linha"><span>Reboco de parede (62 m² × R$ 29)</span><b>R$ 1.798</b></div>
+          <div class="pdf-tot"><span>Total</span><b>R$ 1.798</b></div>
+          <div class="pdf-rod"><span class="brand-pdf"><img src="/icons/icon-192.png" alt="Orçaí">Gerado com <b>Orçaí</b></span></div>
+        </article>
+
+        <article class="pdf-card">
+          <span class="pdf-tag">m² + diária</span>
+          <div class="pdf-pro">Marcelo Reformas · Pedreiro · Florianópolis/SC</div>
+          <div class="pdf-zap">wa.me/5548988881234</div>
+          <div class="pdf-meta"><b>ORÇAMENTO Nº 0034</b><span>09/04/2026 até 24/04/2026</span></div>
+          <div class="pdf-cli">Cliente: Obra Casa 4</div>
+          <div class="pdf-linha"><span>Porcelanato 60x60 (18 m² × R$ 74)</span><b>R$ 1.332</b></div>
+          <div class="pdf-linha"><span>Azulejo na parede (9 m² × R$ 88)</span><b>R$ 792</b></div>
+          <div class="pdf-linha"><span>Diária de pedreiro (2 d × R$ 405)</span><b>R$ 810</b></div>
+          <div class="pdf-tot"><span>Total</span><b>R$ 2.934</b></div>
+        </article>
+      </div>
+
+      <div id="pdf-dots" class="dots"></div>
+      <a href="#oferta" class="cta">QUERO MANDAR ASSIM TAMBÉM →</a>
+    </div>
+  </section>
+
+  <!-- 7. Para Quem É / Não É -->
+  <section class="secao">
+    <div class="col">
+      <h2>Pra quem o aplicativo foi feito</h2>
+      <p class="sub-sec">Pedreiro, pintor, eletricista ou encanador que pega serviço por conta.</p>
+
+      <div class="epra">
+        <div class="epra-card sim">
+          <h3>Serve pra você se…</h3>
+          <ul>
+            <li>Fica na dúvida se está pedindo pouco</li>
+            <li>Está começando agora e não sabe quanto cobrar</li>
+            <li>Gasta tempo demais montando orçamento</li>
+            <li>Quer passar mais firmeza pro cliente</li>
+          </ul>
+        </div>
+        <div class="epra-card nao">
+          <h3>Não serve se…</h3>
+          <ul>
+            <li>Trabalha apenas registrado em empresa</li>
+            <li>Não faz questão de enviar orçamento formal</li>
+            <li>Acha normal o cliente ditar o preço do seu serviço</li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#oferta" class="cta">É ISSO QUE EU PRECISO →</a>
+    </div>
+  </section>
+
+  <!-- 8. Tudo que Você Recebe -->
+  <section class="secao">
+    <div class="col">
+      <h2>Confira tudo o que vem junto</h2>
+      <div class="vtr">
+        <div class="vtr-item"><span class="vtr-ico">🎤</span><div><b>Orçamento por voz em 40 segundos</b><span>Você fala o trabalho e as medidas. O app monta tudo e você revisa antes de mandar.</span></div></div>
+        <div class="vtr-item"><span class="vtr-ico">📍</span><div><b>Tabela real da sua região</b><span>Mais de 100 serviços. Valores mínimo, justo e premium ajustados pro seu estado e porte da cidade.</span></div></div>
+        <div class="vtr-item"><span class="vtr-ico">💬</span><div><b>Mensagens prontas pro "tá caro"</b><span>12 respostas de WhatsApp pra defender seu valor sem espantar o cliente.</span></div></div>
+        <div class="vtr-item"><span class="vtr-ico">🛡️</span><div><b>Trava pra não trabalhar no prejuízo</b><span>Você informa quanto precisa tirar no mês. O app alerta quando o valor não paga seu dia.</span></div></div>
+        <div class="vtr-item"><span class="vtr-ico">📐</span><div><b>Correção pelo grau de dificuldade</b><span>Parede fora de prumo, altura, piso na diagonal, urgência, área pequena. O valor sobe na medida certa.</span></div></div>
+        <div class="vtr-item"><span class="vtr-ico">📄</span><div><b>Arquivo PDF pronto em 2 minutos</b><span>Sai com seu nome, WhatsApp e QR code. Você ajusta o que quiser e já envia pro cliente.</span></div></div>
+        <div class="vtr-item"><span class="vtr-ico">🧱</span><div><b>Cálculo completo de material</b><span>Quantidade de piso, bloco, argamassa, concreto e ferragem. Com preço médio do estado e lista de compra pro cliente.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Busca Interativa de Serviços -->
+  <section id="servicos" class="secao">
+    <div class="col">
+      <h2>Acha que não tem o seu serviço? <mark>Testa aí.</mark></h2>
+      <p class="sub-sec">São mais de 100 cadastrados. E se faltar algum, você mesmo adiciona.</p>
+
+      <div class="srv-box">
+        <div class="srv-input-wrap">
+          <input id="srv-input" class="srv-input" type="search" placeholder="Busque: piso, reboco, forro…" autocomplete="off">
+          <button id="srv-limpar" class="srv-limpar" type="button" aria-label="Limpar busca">✕</button>
+        </div>
+        <div class="srv-chips">
+          <button type="button" class="srv-chip" data-q="parede">parede</button>
+          <button type="button" class="srv-chip" data-q="reboco">reboco</button>
+          <button type="button" class="srv-chip" data-q="forro">forro</button>
+        </div>
+        <div id="srv-status" class="srv-status"></div>
+        <ul id="srv-lista" class="srv-lista"></ul>
+        <p id="srv-mais" class="srv-mais"></p>
+        <div class="srv-cria">
+          <b>Faz algum serviço diferente?</b> Dentro do app você cadastra o seu serviço, com seu nome e valor próprio. Ele já fica salvo pros próximos orçamentos.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Bônus -->
+  <section class="secao">
+    <div class="col">
+      <h2>E mais: 4 bônus pra ajudar a fechar mais obras</h2>
+      <div class="bonuses">
+        <article class="bonus">
+          <div class="bon-topo"><span class="bon-tag">BÔNUS 1</span><div class="bon-preco"><span class="bon-de">R$ 17</span><span class="bon-incluso">INCLUSO</span></div></div>
+          <h3>Calculadora da sua diária</h3>
+          <p>Informe suas contas do mês e descubra quanto seu dia precisa render no mínimo.</p>
+        </article>
+        <article class="bonus">
+          <div class="bon-topo"><span class="bon-tag">BÔNUS 2</span><div class="bon-preco"><span class="bon-de">R$ 17</span><span class="bon-incluso">INCLUSO</span></div></div>
+          <h3>Calculadora de material</h3>
+          <p>Quantos blocos, caixas de piso já com perda, sacos de argamassa, m³ de concreto e quilos de ferro.</p>
+        </article>
+        <article class="bonus">
+          <div class="bon-topo"><span class="bon-tag">BÔNUS 3</span><div class="bon-preco"><span class="bon-de">R$ 12</span><span class="bon-incluso">INCLUSO</span></div></div>
+          <h3>Respostas prontas pro "tá caro"</h3>
+          <p>12 textos prontos pra mandar no WhatsApp, segurar seu preço e não perder o cliente.</p>
+        </article>
+        <article class="bonus">
+          <div class="bon-topo"><span class="bon-tag">BÔNUS 4</span><div class="bon-preco"><span class="bon-de">R$ 27</span><span class="bon-incluso">INCLUSO</span></div></div>
+          <h3>Atualizações futuras</h3>
+          <p>Novos serviços e tabelas revisadas sem nenhum custo extra depois.</p>
+        </article>
+      </div>
+      <p class="bon-rod">Todos eles são liberados junto com o seu acesso.</p>
+      <a href="#oferta" class="cta">QUERO GARANTIR MEU ACESSO →</a>
+    </div>
+  </section>
+
+  <!-- 11. Prints de WhatsApp -->
+  <section id="depoimentos" class="secao">
+    <div class="col">
+      <h2>Veja o que outros profissionais estão dizendo</h2>
+      <p class="sub-sec">Conversas reais de quem já usa no dia a dia. Arraste pro lado.</p>
+
+      <div id="dep-trilha" class="dep-trilha" role="group" aria-label="Mensagens de pedreiros que usam o app">
+        <div class="dep-slide"><img src="/img/depoimentos/prova-1.webp" alt="Depoimento 1"></div>
+        <div class="dep-slide"><img src="/img/depoimentos/prova-2.webp" alt="Depoimento 2"></div>
+        <div class="dep-slide"><img src="/img/depoimentos/prova-8.webp" alt="Depoimento 3"></div>
+        <div class="dep-slide"><img src="/img/depoimentos/prova-3.webp" alt="Depoimento 4"></div>
+        <div class="dep-slide"><img src="/img/depoimentos/prova-4.webp" alt="Depoimento 5"></div>
+        <div class="dep-slide"><img src="/img/depoimentos/prova-5.webp" alt="Depoimento 6"></div>
+        <div class="dep-slide"><img src="/img/depoimentos/prova-6.webp" alt="Depoimento 7"></div>
+        <div class="dep-slide"><img src="/img/depoimentos/prova-7.webp" alt="Depoimento 8"></div>
+      </div>
+
+      <div id="dep-dots" class="dots"></div>
+      <a href="#oferta" class="cta">QUERO TER ESSES RESULTADOS →</a>
+    </div>
+  </section>
+
+  <!-- 12. Oferta Principal -->
+  <section id="oferta" class="secao secao-oferta">
+    <div class="col">
+      <h2>Libere seu acesso ao Orçaí hoje</h2>
+      <div class="plano">
+        <span class="selo-plano">TUDO INCLUSO</span>
+        <div class="pl-brand"><img src="/icons/icon-192.png" alt="Orçaí"><span>Orçaí</span></div>
+        <h3>O APP COMPLETO</h3>
+
+        <div class="preco-caixa">
+          <div class="preco-de">De R$ 97</div>
+          <div class="preco-val">R$ 27</div>
+          <span class="preco-off">72% OFF</span>
+          <div class="preco-parc">ou em até 3x no cartão</div>
+        </div>
+
+        <ul class="plano-lista">
+          <li>App Orçaí: tabela completa da sua cidade com mais de 100 serviços</li>
+          <li>Orçamento por voz: você fala a obra e ele monta tudo <span class="pl-novo">NOVO</span></li>
+          <li>Roda direto no navegador: abre pelo link, sem baixar nada</li>
+          <li>Orçamento em PDF com seu nome e WhatsApp</li>
+          <li>Ajuste pelo nível de dificuldade da obra</li>
+          <li>Acompanhamento dos orçamentos aprovados</li>
+          <li>BÔNUS 1 Calculadora da sua diária (R$ 17)</li>
+          <li>BÔNUS 2 Calculadora de material (R$ 17)</li>
+          <li>BÔNUS 3 Respostas prontas pro “tá caro” (R$ 12)</li>
+          <li>BÔNUS 4 Atualizações futuras (R$ 27)</li>
+        </ul>
+
+        <div class="pl-selos">
+          <span>Pagamento único</span>
+          <span>Sem mensalidade</span>
+          <span>Acesso vitalício</span>
+          <span>Garantia de 30 dias</span>
+        </div>
+
+        <a href="#" class="cta cta-grande" data-checkout="completo">QUERO LIBERAR AGORA →</a>
+        <p class="pl-nota">Pix ou cartão · você recebe o link direto no WhatsApp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Garantia -->
+  <section class="secao">
+    <div class="col">
+      <div class="pas-garantia">
+        <span class="pas-selo">✓ 30 DIAS</span>
+        <h2>Garantia de 30 dias</h2>
+        <p>Testou na prática e viu que não serve pra você? Basta chamar no <a href="#">nosso WhatsApp</a> e devolvemos <mark>100% do valor</mark>, sem enrolação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. Por que o Orçaí existe -->
+  <section id="quem-fez" class="secao">
+    <div class="col">
+      <h2>Por que o Orçaí existe</h2>
+      <div class="aut-card">
+        <div class="aut-icone-wrap">
+          <img src="/icons/icon-192.png" alt="Orçaí">
+        </div>
+        <div class="aut-corpo">
+          <p class="aut-txt">Todo dia tem profissional bom perdendo obra porque demorou pra mandar o orçamento, ou trabalhando quase de graça porque calculou no olho. O Orçaí nasceu pra acabar com isso: você monta o orçamento na hora, com o preço da sua região, e manda pro cliente pelo WhatsApp com cara de empresa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. Linha do Tempo: Comece em 2 minutos -->
+  <section class="secao">
+    <div class="col">
+      <h2>Pronto pra usar em 2 minutos</h2>
+      <ol class="pas-tl">
+        <li><span class="tl-num">1</span><div><b>Finalize o pedido</b><span>Pelo Pix ou cartão.</span></div></li>
+        <li><span class="tl-num">2</span><div><b>Receba pelo WhatsApp</b><span>O link chega na mesma hora.</span></div></li>
+        <li><span class="tl-num">3</span><div><b>Acesse no celular</b><span>Sem precisar instalar nada.</span></div></li>
+        <li><span class="tl-num">4</span><div><b>Gere seu primeiro orçamento</b><span>Ainda hoje.</span></div></li>
+      </ol>
+      <a href="#oferta" class="cta">QUERO MEU ACESSO AGORA →</a>
+    </div>
+  </section>
+
+  <!-- 16. Perguntas Frequentes -->
+  <section class="secao">
+    <div class="col">
+      <h2>Dúvidas mais comuns</h2>
+      <div class="pas-faq">
+        <details class="pas-q" name="pas-faq"><summary>O microfone vai funcionar no meu celular?</summary><p>Roda no Chrome, tanto no celular quanto no computador. No primeiro uso ele pede autorização pro microfone. Se o seu aparelho não permitir, você digita do mesmo jeito que falaria e ele monta igualzinho.</p></details>
+        <details class="pas-q" name="pas-faq"><summary>E se ele entender alguma palavra errada?</summary><p>Antes de fechar o orçamento, o aplicativo exibe tudo o que captou: serviço, metragem e preço. Você ajusta o que precisar e só confirma depois de conferir.</p></details>
+        <details class="pas-q" name="pas-faq"><summary>E se o cliente reclamar que está caro?</summary><p>O documento detalha etapa por etapa, com o valor praticado na sua cidade: o cliente enxerga pelo que está pagando. Além disso, você ganha 12 respostas prontas pro “tá caro” pra usar no WhatsApp.</p></details>
+        <details class="pas-q" name="pas-faq"><summary>O valor já conta o ajudante?</summary><p>O preço por m² é referente ao serviço, não por pessoa. Se você trabalha com ajudante, basta avisar no app: ele inclui a diária do ajudante nos custos e avisa se o valor não cobrir os dois. No PDF aparece “Incluso: mão de obra e ajudante”. Caso cobre separado, também existe a diária de ajudante.</p></details>
+        <details class="pas-q" name="pas-faq"><summary>Trabalho por diária ou empreita. Funciona pra mim?</summary><p>Funciona sim. Tem diária de pedreiro e de ajudante, além do valor por m² de cada etapa. Na empreita, você soma os serviços e ajusta o total pro combinado. Dá até pra juntar m² e diária no mesmo documento.</p></details>
+        <details class="pas-q" name="pas-faq"><summary>Os valores batem com a minha cidade?</summary><p>Sim. O aplicativo adapta os preços conforme o seu estado e o tamanho do município: capital, cidade média ou interior.</p></details>
+        <details class="pas-q" name="pas-faq"><summary>Qual a base desses preços?</summary><p>Vêm de levantamento de preços de mão de obra de 2025 e 2026, calibrados com dados do IBGE. Servem como referência segura, mas quem dá a palavra final é você.</p></details>
+        <details class="pas-q" name="pas-faq"><summary>Estou começando agora. Vale a pena?</summary><p>Vale muito. Ele traz a faixa de preço pra quem está iniciando e alerta sempre que um valor não pagar o seu dia de trabalho.</p></details>
+        <details class="pas-q" name="pas-faq"><summary>E se eu testar e não curtir?</summary><p>Você tem 30 dias de prazo. É só mandar mensagem no nosso WhatsApp que devolvemos todo o valor.</p></details>
+      </div>
+      <a href="#" class="faq-zap">💬 Ficou alguma dúvida? Chama a gente no WhatsApp</a>
+      <a href="#oferta" class="cta">GARANTIR MINHA VAGA →</a>
+    </div>
+  </section>
+
+  <!-- 17. Chamada Final -->
+  <section class="secao fim-secao">
+    <div class="col">
+      <h2>Seu próximo orçamento já pode sair com o valor certo</h2>
+      <div class="fim-preco"><b>R$ 27</b> · pagamento único</div>
+      <a href="#" class="cta cta-grande" data-checkout="completo">GARANTIR MEU ACESSO →</a>
+      <div class="fim-chips">
+        <span>Compra segura</span>
+        <span>· Garantia de 30 dias</span>
+        <span>· Liberação imediata</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18. Rodapé -->
+  <footer class="rodape">
+    <div class="rodape-brand"><img src="/icons/icon-192.png" alt="Orçaí"><span>Orçaí</span></div>
+    <p>© 2026 Orçaí · <a href="#">Termos de Uso</a> · <a href="#">Política de Privacidade</a></p>
+    <p>Suporte e reembolso: <a href="#">WhatsApp</a></p>
+    <p>Os valores do aplicativo servem como base de mercado e não são tabela oficial. Quem bate o martelo no preço final é o profissional.</p>
+    <p>Este produto não tem vínculo com o Facebook nem é recomendado pelo Facebook.</p>
+  </footer>
+
+  <script src="/js/oferta.js"></script>
+</body>
+</html>
