@@ -4,6 +4,8 @@
   "description": "Funil completo Orçaí (Quiz + Página de Oferta)",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "node -e \"const fs=require('fs'),path=require('path');const p='public';fs.copyFileSync(path.join(p,'diagnostico.html'),path.join(p,'index.html'));console.log('Build OK: public/ pronto para deploy');\""
   }
 }

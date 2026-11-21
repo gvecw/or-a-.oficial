@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/diagnostico", "destination": "/diagnostico.html" },
+    { "source": "/oferta", "destination": "/oferta.html" },
+    { "source": "/((?!css/|js/|img/|icons/).*)", "destination": "/diagnostico.html" }
+  ]
+}
