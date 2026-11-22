@@ -239,4 +239,14 @@
     });
     renderSearch('parede');
   }
+
+  // Preserva parâmetros UTM da URL atual no botão de compra do card de R$ 27
+  const checkoutBtn = document.querySelector('#oferta .plano a[data-checkout="completo"]');
+  if (checkoutBtn) {
+    const baseHref = checkoutBtn.getAttribute('href');
+    const qs = window.location.search.replace(/^\?/, '');
+    if (qs && baseHref && baseHref !== '#') {
+      checkoutBtn.setAttribute('href', `${baseHref}&${qs}`);
+    }
+  }
 })();
